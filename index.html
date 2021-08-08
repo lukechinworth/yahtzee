@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjs@9.4.4/lib/browser/math.min.js"></script>
+    </head>
+    <body>
+        <div id="app" v-cloak>
+
+        <table>
+            <tr>
+                <th>Roll</th>
+                <td><input v-model="rollText" type="text"></td>
+            </tr>
+            <tr>
+                <th>Dice</th>
+                <td><input v-model="diceText" type="text"></td>
+            </tr>
+        </table>
+
+        <h2>Score</h2>
+        <table>
+            <tr>
+                <th>Ones</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Twos</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Threes</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Fours</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Fives</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Sixes</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>Subtotal</td>
+                <td>TODO</td>
+            </tr>
+            <tr>
+                <th>Bonus</td>
+                <td>TODO</td>
+            </tr>
+            <tr>
+                <th>Total</td>
+                <td>TODO</td>
+            </tr>
+        </table>
+    </div>
+    <script src="/script.js"></script>
+    <script src="/yahtzee.js"></script>
+
+    </body>
+</html>
