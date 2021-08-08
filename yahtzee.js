@@ -1,3 +1,5 @@
+import { matrix, multiply } from "https://cdn.skypack.dev/mathjs";
+
 // Source: https://www.datagenetics.com/blog/january42012/index.html
 var transitionMatrix = [
     [120 / 1296, 900 / 1296, 250 / 1296, 25 / 1296, 1 / 1296],
@@ -7,14 +9,14 @@ var transitionMatrix = [
     [0, 0, 0, 0, 1]
 ];
 
-var mathMathrix = math.matrix(transitionMatrix);
+var mathMathrix = matrix(transitionMatrix);
 
 var roll1 = transitionMatrix[0];
 
-var roll2 = math.multiply(roll1, mathMathrix);
+var roll2 = multiply(roll1, mathMathrix);
 
 console.log(roll2)
 
-var roll3 = math.multiply(roll2, mathMathrix);
+var roll3 = multiply(roll2, mathMathrix);
 
 console.log(roll3)
